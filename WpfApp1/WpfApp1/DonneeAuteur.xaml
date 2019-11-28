@@ -1,0 +1,56 @@
+﻿<Window x:Class="PPe_C_tranchant_v1.DonneeAuteur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPe_C_tranchant_v1"
+        mc:Ignorable="d"
+        Title="DonneeAuteur" Height="672.541" Width="1032.377">
+    <Grid Background="#FFFFF9D6">
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="642" Stroke="Black" VerticalAlignment="Top" Width="284"/>
+        <Button x:Name="cmdAjouterAuteur" Content="cmdAjouter" HorizontalAlignment="Left" Height="82" Margin="48,268,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="18"/>
+        <Button x:Name="cmdAcceuil" Content="cmdAcceuil" HorizontalAlignment="Left" Height="37" Margin="48,13,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="18"/>
+        <Button x:Name="cmdDeleteAuteur" Content="cmdSupprimer" HorizontalAlignment="Left" Height="82" Margin="48,509,0,0" VerticalAlignment="Top" Width="186" Background="White" FontSize="18" Foreground="#FF3B3B98"/>
+        <Button x:Name="cmdModifierAuteur" Content="cmdModifier" HorizontalAlignment="Left" Height="82" Margin="48,386,0,0" VerticalAlignment="Top" Width="186" Background="White" FontSize="18" Foreground="#FF3B3B98" />
+        <Label x:Name="lblNomDeLaDonneeGeree2" Content="lblNomDeLaDonneeGeree&#xA;" HorizontalAlignment="Left" Height="30" Margin="558,32,0,0" VerticalAlignment="Top" Width="167"/>
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="241" Margin="295,109,0,0" Stroke="Black" VerticalAlignment="Top" Width="692"/>
+        <TextBox x:Name="txtNumauteur" HorizontalAlignment="Left" Height="25" Margin="416,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="txtNomAuteur" HorizontalAlignment="Left" Height="25" Margin="605,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="txtPrenomAuteur" HorizontalAlignment="Left" Height="25" Margin="814,139,-150,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.383,0.665"/>
+        <TextBox x:Name="txtPseudoAuteur" HorizontalAlignment="Left" Height="25" Margin="814,208,-150,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.644,2.869"/>
+        <TextBox x:Name="txtPaysAuteur" HorizontalAlignment="Left" Height="25" Margin="605,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.333,0.234"/>
+        <TextBox x:Name="txtDateNaissanceAuteur" HorizontalAlignment="Left" Height="25" Margin="416,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="txtDateDecesAuteur" Height="25" Margin="724,268,172,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBiographieAuteur" HorizontalAlignment="Left" Height="25" Margin="500,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Label x:Name="lblNumAuteur" Content="Numéro :&#xA;" HorizontalAlignment="Left" Height="30" Margin="345,139,0,0" VerticalAlignment="Top" Width="71" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblNomAuteur" Content="Nom :&#xA;" HorizontalAlignment="Left" Height="30" Margin="558,139,0,0" VerticalAlignment="Top" Width="64" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblPrenomAuteur" Content="Prénom :&#xA;" HorizontalAlignment="Left" Height="30" Margin="754,139,-22,0" VerticalAlignment="Top" Width="60" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblDateNaissanceAuteur" Content="Date de naissance :&#xA;" HorizontalAlignment="Left" Height="30" Margin="295,203,0,0" VerticalAlignment="Top" Width="121" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblPaysAuteur" Content="Pays :&#xA;" HorizontalAlignment="Left" Height="30" Margin="558,208,0,0" VerticalAlignment="Top" Width="42" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblPseudoAuteur" Content="Pseudo :&#xA;" HorizontalAlignment="Left" Height="30" Margin="754,210,-22,0" VerticalAlignment="Top" Width="60" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblBiographieAuteur" Content="Biographie :&#xA;" HorizontalAlignment="Left" Height="30" Margin="421,268,0,0" VerticalAlignment="Top" Width="92" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblDatedeces" Content="Date de décés :&#xA;" HorizontalAlignment="Left" Height="30" Margin="633,268,0,0" VerticalAlignment="Top" Width="96" Foreground="#FFFFF9D6"/>
+        <DataGrid x:Name="datgrdAuteur" HorizontalAlignment="Left" Height="238" Margin="345,371,0,0" VerticalAlignment="Top" Width="610"/>
+        <Button x:Name="cmdRechercheAuteur" Content="Rechercher" HorizontalAlignment="Left" Margin="181,158,0,0" VerticalAlignment="Top" Width="96" Height="32" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtRechercheAuteur" Height="30" Margin="7,159,849,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" BorderBrush="White">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+    </Grid>
+</Window>

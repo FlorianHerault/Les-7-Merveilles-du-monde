@@ -1,0 +1,112 @@
+﻿<Window x:Class="PPE1_C_TRANCHANT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPE1_C_TRANCHANT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="655.328" Width="1101">
+    <Grid Background="#FFFFF9D6" Margin="0,0,2,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="801"/>
+            <ColumnDefinition Width="253"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="624" Stroke="Black" VerticalAlignment="Top" Width="317" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-1">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform Y="0.032"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+
+        <Label x:Name="lblNom" Content="Bienvenu à la Médiathèque FunEnBulles !" HorizontalAlignment="Left" Margin="339,36,0,0" VerticalAlignment="Top" Height="56" Width="715" FontSize="30" FontFamily="Noto Mono" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.028" Y="-0.015"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblID" Content="Identifiant" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Height="34" Width="83" Foreground="White" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.019" Y="0.041"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblMdp" Content="lblMdp" HorizontalAlignment="Left" Margin="28,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.652,0.535" Height="34" Width="65" Foreground="White" FontSize="16">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.047"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="30" Margin="93,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.019" Y="0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="cmdConnexion" Content="Connexion" HorizontalAlignment="Left" Margin="82,343,0,0" VerticalAlignment="Top" Width="152" Height="61" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lblErreurLog" Content="lblErreurLog" HorizontalAlignment="Left" Margin="93,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.631,0.218" Height="34" Width="54" Foreground="#FFFF0303">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.011" Y="0.06"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblErreurBdd" Content="lblErreurBdd" HorizontalAlignment="Left" Margin="92,276,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.631,0.218" Height="34" Width="55" Foreground="#FFFF0303">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.009" Y="0.06"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="cmdQuit" Content="Quitter" HorizontalAlignment="Left" Margin="80,521,0,0" VerticalAlignment="Top" Width="152" Height="60" Background="#FF3B3B98" FontSize="16" Foreground="White" Grid.Column="1" ClickMode="Press" Cursor="Hand"/>
+        <TextBox x:Name="txtMdp" HorizontalAlignment="Left" Height="30" Margin="93,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+
+    </Grid>
+</Window>

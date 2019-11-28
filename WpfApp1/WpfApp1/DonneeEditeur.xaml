@@ -1,0 +1,58 @@
+﻿<Window x:Class="PPe_C_tranchant_v1.DonneeEditeur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPe_C_tranchant_v1"
+        mc:Ignorable="d"
+        Title="DonneeEditeur" Height="654.098" Width="1026.23">
+    <Grid Background="#FFFFF9D6">
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="623" Stroke="Black" VerticalAlignment="Top" Width="284"/>
+        <Button x:Name="cmdAjouterEditeur" Content="cmdAjouter" HorizontalAlignment="Left" Height="82" Margin="48,273,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="18"/>
+        <Button x:Name="cmdAcceuil" Content="cmdAcceuil" HorizontalAlignment="Left" Height="37" Margin="48,42,0,0" VerticalAlignment="Top" Width="186" Background="White" FontSize="18" Foreground="#FF3B3B98"/>
+        <Button x:Name="cmdDeleteEditeur" Content="cmdSupprimer" HorizontalAlignment="Left" Height="82" Margin="48,509,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="18"/>
+        <Button x:Name="cmdModifierEditeur" Content="cmdModifier" HorizontalAlignment="Left" Height="82" Margin="48,390,0,0" VerticalAlignment="Top" Width="186" Background="White" FontSize="18" Foreground="#FF3B3B98" />
+        <Label x:Name="lblNomDeLaDonneeGeree1" Content="lblNomDeLaDonneeGeree&#xA;" HorizontalAlignment="Left" Height="30" Margin="581,37,0,0" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.355,0.538"/>
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="250" Margin="295,109,0,0" Stroke="Black" VerticalAlignment="Top" Width="692"/>
+        <TextBox x:Name="txtNumEditeur" HorizontalAlignment="Left" Height="25" Margin="403,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="txtNomEditeur" HorizontalAlignment="Left" Height="25" Margin="605,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="txtCodePostalEditeur" HorizontalAlignment="Left" Height="25" Margin="844,139,-180,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.383,0.665"/>
+        <TextBox x:Name="txtDateCreationEditeur" HorizontalAlignment="Left" Height="25" Margin="844,210,-180,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.644,2.869"/>
+        <TextBox x:Name="txtVilleEditeur" HorizontalAlignment="Left" Height="25" Margin="605,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.333,0.234"/>
+        <TextBox x:Name="txtRueEditeur" HorizontalAlignment="Left" Height="25" Margin="403,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="txtTelEditeur" Height="25" Margin="605,268,59,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMailEditeur" HorizontalAlignment="Left" Height="25" Margin="403,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Label x:Name="lblNumEditeur" Content="Numéro :&#xA;" HorizontalAlignment="Left" Height="30" Margin="327,139,0,0" VerticalAlignment="Top" Width="71" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblNomEditeur" Content="Nom :&#xA;" HorizontalAlignment="Left" Height="30" Margin="558,139,0,0" VerticalAlignment="Top" Width="64" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblCodePostalEditeur" Content="Code postal :&#xA;" HorizontalAlignment="Left" Height="30" Margin="757,139,-52,0" VerticalAlignment="Top" Width="87" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblRueEditeur" Content="Rue :&#xA;" HorizontalAlignment="Left" Height="30" Margin="347,203,0,0" VerticalAlignment="Top" Width="121" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblVilleEditeur" Content="Ville :&#xA;" HorizontalAlignment="Left" Height="30" Margin="558,208,0,0" VerticalAlignment="Top" Width="42" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblDatecreationediteur" Content="Date de création :&#xA;" HorizontalAlignment="Left" Height="30" Margin="738,210,-57,0" VerticalAlignment="Top" Width="111" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblMailEditeur" Content="Mail :&#xA;" HorizontalAlignment="Left" Height="30" Margin="347,263,0,0" VerticalAlignment="Top" Width="92" Foreground="#FFFFF9D6"/>
+        <Label x:Name="lblTelEditeur" Content="Téléphone :&#xA;" HorizontalAlignment="Left" Height="30" Margin="531,268,0,0" VerticalAlignment="Top" Width="91" Foreground="#FFFFF9D6"/>
+        <TextBox x:Name="txtFaxEditeur" Height="25" Margin="605,308,59,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="lblFaxEditeur" Content="Fax :&#xA;" HorizontalAlignment="Left" Height="30" Margin="531,303,0,0" VerticalAlignment="Top" Width="60" Foreground="#FFFFF9D6" RenderTransformOrigin="-0.073,2.011"/>
+        <Button x:Name="cmdRechercheEditeur" Content="Rechercher" HorizontalAlignment="Left" Margin="185,176,0,0" VerticalAlignment="Top" Width="96" Height="32" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtRechercheEditeur" Height="30" Margin="8,177,842,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" BorderBrush="White">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <DataGrid x:Name="datgrdEditeur" HorizontalAlignment="Left" Height="238" Margin="345,371,0,0" VerticalAlignment="Top" Width="610"/>
+
+    </Grid>
+</Window>

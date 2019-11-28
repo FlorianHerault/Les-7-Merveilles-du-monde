@@ -1,0 +1,20 @@
+﻿<Window x:Class="PPe_C_tranchant_v1.Consultation_Emprunt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPe_C_tranchant_v1"
+        mc:Ignorable="d"
+        Title="Consultation_Emprunt" Height="794.262" Width="1029.918">
+    <Grid Background="#FFFFF9D6">
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="763" Stroke="Black" VerticalAlignment="Top" Width="267"/>
+        <Button x:Name="cmdAcceuil" Content="cmdAccueil" HorizontalAlignment="Left" Height="55" Margin="28,58,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16"/>
+        <Button x:Name="cmdDeco" Content="cmdDeco" HorizontalAlignment="Left" Height="82" Margin="28,656,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16" Cursor="Hand"/>
+        <Label x:Name="lblEmpruntDeNomUser" Content="lblEmpruntDeNomUser" HorizontalAlignment="Left" Height="38" Margin="494,58,0,0" VerticalAlignment="Top" Width="254" Foreground="#FF3B3B98" FontSize="16" RenderTransformOrigin="0.066,0.527"/>
+        <DataGrid x:Name="datgrdAffichagePropriété" HorizontalAlignment="Left" Height="288" Margin="328,190,0,0" VerticalAlignment="Top" Width="605"/>
+        <Button x:Name="cmdBack" Content="cmdBack" HorizontalAlignment="Left" Height="82" Margin="28,527,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16" Cursor="Hand"/>
+        <Button x:Name="cmdModifierEmprunt" Content="cmdModifierEmprunt" HorizontalAlignment="Left" Height="82" Margin="396,529,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16" Cursor="Hand"/>
+        <Button x:Name="cmdLivreRendu" Content="cmdLivreRendu" HorizontalAlignment="Left" Height="82" Margin="686,529,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16" Cursor="Hand"/>
+
+    </Grid>
+</Window>

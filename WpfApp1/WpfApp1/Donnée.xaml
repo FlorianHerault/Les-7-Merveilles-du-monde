@@ -1,0 +1,53 @@
+﻿<Window x:Class="PPE1_C_TRANCHANT.Donnée"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPE1_C_TRANCHANT"
+        mc:Ignorable="d"
+        Title="Donnée" Height="644" Width="1007">
+    <Grid Margin="0,0,2,2" Background="#FFFFF9D6" RenderTransformOrigin="0.405,0.445">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="966*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="611" Stroke="Black" VerticalAlignment="Top" Width="267" Grid.RowSpan="2"/>
+        <Button x:Name="cmdAjouter" Content="cmdAjouter" HorizontalAlignment="Left" Height="82" Margin="28,26,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16" Grid.Row="1"/>
+        <Button x:Name="cmdAcceuil" Content="cmdAccueil" HorizontalAlignment="Left" Height="55" Margin="28,33,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="16"/>
+        <Button x:Name="cmdSupprimer" Content="cmdSupprimer" HorizontalAlignment="Left" Height="82" Margin="28,222,0,0" VerticalAlignment="Top" Width="186" Background="White" Grid.Row="1" Foreground="#FF3B3B98" FontSize="16"/>
+        <Button x:Name="cmdModifier" Content="cmdModifier" HorizontalAlignment="Left" Height="82" Margin="28,125,0,0" VerticalAlignment="Top" Width="186" Background="White" Grid.Row="1" Foreground="#FF3B3B98" FontSize="16" />
+        <Label x:Name="lblNomDeLaDonneeGeree" Content="lblNomDeLaDonneeGeree&#xA;" HorizontalAlignment="Left" Height="30" Margin="352,58,0,0" VerticalAlignment="Top" Width="234" Foreground="#FF3B3B98" FontSize="16"/>
+        <ListView x:Name="lvwDonnee" HorizontalAlignment="Left" Height="179" VerticalAlignment="Top" Width="581" Margin="352,65,0,0" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="cmdRechercheDonnee" Content="Rechercher" HorizontalAlignment="Left" Margin="169,176,0,0" VerticalAlignment="Top" Width="96" Height="32" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtRechercheAuteur" Height="30" Margin="8,177,801,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" BorderBrush="White">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+    </Grid>
+</Window>

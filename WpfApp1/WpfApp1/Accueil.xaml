@@ -1,0 +1,169 @@
+﻿<Window x:Class="PPE1_C_TRANCHANT.Accueil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPE1_C_TRANCHANT"
+        mc:Ignorable="d"
+        Title="Accueil" Height="655.328" Width="1300.41">
+    <Grid Background="#FFFFF9D6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="316"/>
+            <ColumnDefinition Width="976"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="624" Stroke="Black" VerticalAlignment="Top" Width="317" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform Y="0.032"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+
+        <Label x:Name="lblNom" Content="Bienvenu à la Médiathèque FunEnBulles !" HorizontalAlignment="Left" Margin="26,29,0,0" VerticalAlignment="Top" Height="56" Width="715" FontSize="30" FontFamily="Noto Mono" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.028" Y="-0.015"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblPrenomNom" Content="PrenomNom" HorizontalAlignment="Left" Margin="118,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.652,0.535" Height="44" Width="216" Foreground="White" FontSize="24" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.047"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="cmdQuit" Content="Quitter" HorizontalAlignment="Left" Margin="764,529,0,0" VerticalAlignment="Top" Width="152" Height="60" Background="#FF3B3B98" FontSize="16" Foreground="White" Grid.Column="1" ClickMode="Press" Cursor="Hand"/>
+        <TextBox x:Name="txtRecherche" Height="30" Margin="13,241,114,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" BorderBrush="White">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblBienvenu" Content="Bienvenu, " HorizontalAlignment="Left" Margin="5,39,0,0" VerticalAlignment="Top" Height="44" Width="113" Foreground="White" FontSize="24" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.019" Y="0.041"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="cmdProfil" Content="Profil" HorizontalAlignment="Left" Margin="50,296,0,0" VerticalAlignment="Top" Width="204" Height="90" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="cmdConnexion_Copy1" Content="Mes Coups de coeur" HorizontalAlignment="Left" Margin="52,421,0,0" VerticalAlignment="Top" Width="203" Height="94" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="cmdRechercheLivre" Content="Rechercher" HorizontalAlignment="Left" Margin="214,240,0,0" VerticalAlignment="Top" Width="96" Height="32" Background="White" FontSize="16" Foreground="#FF3B3B98" BorderBrush="#FF3B3B98" BorderThickness="1" Cursor="Hand" ClickMode="Press" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.001" Y="0.032"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lbl_ChercheLivre" Content="À la recherche d'un livre ou d'un auteur ?" HorizontalAlignment="Left" Margin="4,208,0,0" VerticalAlignment="Top" Height="44" Width="307" Foreground="White" FontSize="16" RenderTransformOrigin="0.5,0.5" FontStyle="Italic">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.019" Y="0.041"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Rectangle x:Name="cmdAuteur" Grid.Column="1" Fill="#FF3B3B98" HorizontalAlignment="Left" Height="183" Margin="492,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="180" Cursor="Hand" RadiusX="90" RadiusY="90">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="cmdLivre" Grid.Column="1" Fill="#FF3B3B98" HorizontalAlignment="Left" Height="183" Margin="170,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="180" Cursor="Hand" RadiusX="90" RadiusY="90">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="cmdEditeur" Grid.Column="1" Fill="#FF3B3B98" HorizontalAlignment="Left" Height="183" Margin="492,380,0,0" Stroke="Black" VerticalAlignment="Top" Width="180" Cursor="Hand" RadiusX="90" RadiusY="90">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="cmdEmprunt" Grid.Column="1" Fill="#FF3B3B98" HorizontalAlignment="Left" Height="183" Margin="170,380,0,0" Stroke="Black" VerticalAlignment="Top" Width="180" Cursor="Hand" RadiusX="90" RadiusY="90">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label x:Name="lblLivres" Content="Livres" HorizontalAlignment="Left" Margin="226,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.652,0.535" Height="44" Width="72" Foreground="White" FontSize="24" Grid.Column="1" Cursor="Hand">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.047"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblAuteurs" Content="Auteurs" HorizontalAlignment="Left" Margin="534,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.652,0.535" Height="44" Width="91" Foreground="White" FontSize="24" Grid.Column="1" Cursor="Hand">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.047"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblEditeur" Content="Éditeurs" HorizontalAlignment="Left" Margin="534,452,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.652,0.535" Height="44" Width="100" Foreground="White" FontSize="24" Grid.Column="1" Cursor="Hand">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.047"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblEmprunt" Content="Emprunts" HorizontalAlignment="Left" Margin="200,453,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.652,0.535" Height="44" Width="120" Foreground="White" FontSize="24" Grid.Column="1" Cursor="Hand">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform X="-0.014" Y="0.047"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>

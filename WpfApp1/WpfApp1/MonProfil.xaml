@@ -1,0 +1,32 @@
+﻿<Window x:Class="PPe_C_tranchant_v1.MonProfil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPe_C_tranchant_v1"
+        mc:Ignorable="d"
+        Title="MonProfil" Height="660" Width="1142">
+    <Grid Background="#FFFFF9D6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="251*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="393*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="629" Stroke="Black" VerticalAlignment="Top" Width="284"/>
+        <Button x:Name="cmdAccueil" Content="Accueil" HorizontalAlignment="Left" Height="37" Margin="41,35,0,0" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="18"/>
+        <Label x:Name="lblMesInformations" Content="lblMesInformations" HorizontalAlignment="Left" Height="30" Margin="124,35,0,0" VerticalAlignment="Top" Width="167" Grid.Column="3"/>
+        <Rectangle Fill="#FF3B3B98" HorizontalAlignment="Left" Height="218" Margin="25.154,109,-195,0" Stroke="Black" VerticalAlignment="Top" Width="692" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtPseudoUtilisateur" HorizontalAlignment="Left" Height="25" Margin="395,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Grid.Column="3"/>
+        <TextBox x:Name="txtNomUtilisateur" HorizontalAlignment="Left" Height="25" Margin="107.154,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtPrenomUtilisateur" HorizontalAlignment="Left" Height="25" Margin="172,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.383,0.665" Grid.Column="3"/>
+        <Label x:Name="lblNomUtilisateur" Content="Nom :&#xA;" HorizontalAlignment="Left" Height="30" Margin="54.154,159,0,0" VerticalAlignment="Top" Width="64" Foreground="#FFFFF9D6" Grid.Column="2"/>
+        <Label x:Name="lblPrenomUtilisateur" Content="Prénom :&#xA;" HorizontalAlignment="Left" Height="30" Margin="107,164,0,0" VerticalAlignment="Top" Width="60" Foreground="#FFFFF9D6" Grid.Column="3"/>
+        <Label x:Name="lblPseudoUtilisateur" Content="Pseudo :&#xA;" HorizontalAlignment="Left" Height="30" Margin="335,164,0,0" VerticalAlignment="Top" Width="60" Foreground="#FFFFF9D6" Grid.Column="3"/>
+        <Button x:Name="cmdDeco" Content="cmdSeDelog" HorizontalAlignment="Left" Height="37" Margin="41,549,0,-167" VerticalAlignment="Top" Width="186" Background="White" Foreground="#FF3B3B98" FontSize="18"/>
+        <TextBox x:Name="txtNiveauUtilisateur" HorizontalAlignment="Left" Height="25" Margin="107,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.383,0.665" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblNiveauUtilisateur" Content="Niveau :&#xA;" HorizontalAlignment="Left" Height="30" Margin="54,237,0,0" VerticalAlignment="Top" Width="60" Foreground="#FFFFF9D6" Grid.Column="2"/>
+        <DataGrid x:Name="datgrdLivre" HorizontalAlignment="Left" Height="238" Margin="73,363,0,0" VerticalAlignment="Top" Width="610" Grid.ColumnSpan="2" Grid.Column="2"/>
+
+    </Grid>
+</Window>
